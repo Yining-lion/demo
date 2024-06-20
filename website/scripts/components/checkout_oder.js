@@ -26,9 +26,9 @@ export function renderCheckoutOder(){
             </div>
             <div class="subtotal col-md-1">
                 <div data-product-id=${cartItem.id} class="delete_cart_item">X</div>
-                <div class="discount_price">$ ${cartItem.discount_price}</div>
+                <div class="discount_price">$ ${cartItem.discount_price*item.num}</div>
                 <div class="origin_price">
-                ${cartItem.origin_price ? "$ " + cartItem.origin_price : ""}</div>
+                ${cartItem.origin_price ? "$ " + cartItem.origin_price*item.num : ""}</div>
             </div>
         </div>
         `
@@ -51,6 +51,7 @@ export function renderCheckoutOder(){
             const productId = button.dataset.productId;
             const countInput = button.nextElementSibling;
             minusCartNum(productId, countInput);
+            renderCheckoutOder();
             renderCheckoutPrice();
             getCartNum();
         });
@@ -61,6 +62,7 @@ export function renderCheckoutOder(){
             const productId = button.dataset.productId;
             const countInput = button.previousElementSibling;
             plusCartNum(productId, countInput);
+            renderCheckoutOder();
             renderCheckoutPrice();
             getCartNum();
         });
