@@ -91,6 +91,35 @@
     }
 }
 
-/* @media (max-width:768px) {
-    
-} */
+@media (max-width:576px) {
+    .navbar{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+    }
+
+    .nav_menu{
+        position: absolute;
+        left: -25px;
+    }
+
+    .menu{
+        list-style: none;
+        display: inline-block;
+        padding: 0px 15px;
+        border-right: 1px solid gray;
+        font-size: 18px;
+        opacity: 0.6;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            border-right: 1px solid rgba(128,128,128,0.6)
+        }
+    }
+
+    .logo_icon{
+        position: absolute;
+        top: 10px;
+    }
+}
