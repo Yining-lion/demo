@@ -32,3 +32,13 @@
     text-decoration: line-through;
     margin-right: 5px;
 }
+
+@media (max-width:576px){
+    .product_grid{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .product_image{
+        width: 100%;
+    }
+}
