@@ -1,0 +1,94 @@
+.product_info{
+    width: 1180px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: start;
+}
+
+.product_image{
+    height: 450px;
+}
+
+.product_text{
+    margin-top: 40px;
+}
+
+.product_price_area{
+    text-align: right;
+    font-weight: bold;
+}
+
+.origin_price{
+    text-decoration: line-through;
+    font-size: 18px;
+}
+
+.NT{
+    vertical-align: top;
+    color: red;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.discount_price{
+    color: red;
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.add_cart{
+    margin-top: 20px;
+}
+
+.num_text{
+    vertical-align: middle;
+    color: gray;
+    font-size: 14px;
+}
+
+.minus{
+    margin-left: 10px;
+    width: 35px;
+    background-color: rgb(242, 241, 241);
+    border: rgb(172, 172, 172) 1px solid;
+    border-right: 0px;
+    border-radius: 0%;
+    &:hover{
+        background-color: rgba(242, 241, 241, 0);
+        color: black;
+        border: rgb(172, 172, 172) 1px solid;
+        border-right: 0px;
+    }
+}
+
+.plus{
+    width: 35px;
+    background-color: rgb(242, 241, 241);
+    border: rgb(172, 172, 172) 1px solid;
+    border-radius: 0%;
+    &:hover{
+        background-color: rgba(242, 241, 241, 0);
+        color: black;
+        border: rgb(172, 172, 172) 1px solid;
+    }
+}
+
+.buy_count{
+    width: 40px;
+    border: rgb(172, 172, 172) 1px solid;
+    text-align: center;
+}
+
+.add_cart_text{
+    margin-left: 40px;
+    padding: 5px 40px;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #471005cb;
+    color: white;
+    font-weight: 320;
+    letter-spacing: 2px;
+    vertical-align: middle;
+}
