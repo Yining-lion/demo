@@ -2,8 +2,4 @@ html,body{
     margin: 0px;
     padding: 0px;
     font-family: "Noto Sans TC", sans-serif;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
 }
