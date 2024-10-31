@@ -37,13 +37,7 @@ export function getCartNum(){
 };
 
 export function deleteFromCart(productId){
-    let newCart=[];
-    cart.forEach(item => {
-        if(item.id !== productId){
-            newCart.push(item);
-        };
-    });
-    cart = newCart;
+    cart = cart.filter(item => item.id !== productId);
     updateStorage();
 };
 
