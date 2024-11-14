@@ -47,7 +47,7 @@ export function renderHeader(){
     document.querySelectorAll(".menu").forEach(productType => {
         productType.addEventListener("click", () => {
             const productName = productType.dataset.name;
-            location.href = `navbar.html?${productName}`
+            location.href = `navbar.html?keyWord=${productName}`
                        
         });
     });
